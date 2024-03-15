@@ -1,0 +1,68 @@
+@font-face{
+    font-family: "Roboto";
+    src: url("./public/Roboto-Black.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blue: #60a5fa;
+    --white: #eff4fa;
+    --gray: #dee2e7;
+}
+body{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template: 1fr 5fr / 1fr 5fr; 
+    grid-template-areas:"aside header" "aside main";
+}
+header{
+    background-color: var(--white);
+    grid-area: header;
+}
+aside{
+    display: grid;
+    gap: 10%;
+    grid-template-rows: 5rem 3fr 5fr;
+    grid-area: aside;
+    background-color: var(--blue);
+    color: var(--white);
+    font-family: "Roboto";
+    padding: 10px 0 0 30px;
+}
+aside h1{
+    font-size: 1.8rem;
+}
+.icon{
+    display: grid;
+    grid-template-columns: 3rem 1fr 10px;
+    gap: 1rem;
+    align-items: center;
+}
+.icon svg{
+    width: 50px;
+    height: 50px;
+    fill: var(--white);
+}
+aside nav{
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    grid-template-rows: repeat(6,3rem);
+    font-size: 1.3rem;
+}
+aside nav a{
+    color: var(--white);
+    text-decoration: none;
+}
+aside nav svg{
+    width: 25px;
+    height: 25px;
+    fill: var(--white);
+}
+main{
+    background-color: var(--gray);
+    grid-area: main;
+}
