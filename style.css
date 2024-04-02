@@ -6,10 +6,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto";
 }
 :root{
     --blue: #60a5fa;
-    --white: #eff4fa;
+    --white: #f7fbff;
     --gray: #dee2e7;
 }
 body{
@@ -30,7 +31,6 @@ aside{
     grid-area: aside;
     background-color: var(--blue);
     color: var(--white);
-    font-family: "Roboto";
     padding: 10px 0 0 30px;
 }
 aside h1{

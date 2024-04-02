@@ -1,0 +1,71 @@
+header{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem 2rem;
+}
+.search{
+    display: grid;
+    grid-template-rows: 5rem;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 30px;
+}
+.bell{
+    grid-column-start: 4;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+.avatar{
+    background: url("./public/avatar.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: local;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    flex: 0 0 auto;
+}
+header svg{
+    width: 25px;
+    height: 25px;
+    flex: 0 0 auto;
+}
+.inputSearch{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.inputSearch > input[type="text"]{
+    width: clamp(150px,80%,600px);
+    height: 2rem;
+    background-color: var(--gray);
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 20px;
+}
+.handleBoard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.greating{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.buttons{
+    display: flex;
+    justify-self: flex-end;
+    gap: 1rem;   
+}
+.buttons > button{
+    width: 6rem;
+    height: 2.3rem;
+    color: white;
+    background-color: var(--blue);
+    border-radius: 20px;
+    border: 1px solid rgb(209, 209, 209);
+}
