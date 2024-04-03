@@ -26,8 +26,8 @@ header{
 }
 aside{
     display: grid;
-    gap: 10%;
-    grid-template-rows: 5rem 3fr 5fr;
+    gap: 2rem;
+    grid-template-rows: 5rem 20rem 1fr;
     grid-area: aside;
     background-color: var(--blue);
     color: var(--white);
